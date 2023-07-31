@@ -10,6 +10,7 @@ from src.auth.shemas import UserRead, UserCreate
 from fastapi_users import FastAPIUsers
 
 app = FastAPI()
+
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory='static'), name='static')
 
@@ -33,7 +34,20 @@ app.include_router(
     tags=['register']
 )
 
+# base page routers
+base_router = APIRouter(
+    prefix='/main',
+    tags=['Main']
+)
+
+
+@base_router.get('/posts')
+def get_reg_page(request: Request):
+    return templates.TemplateResponse("post.html", {"request": request})
+
+
 app.include_router(auth_router)
+app.include_router(base_router)
 
 
 if __name__ == '__main__':

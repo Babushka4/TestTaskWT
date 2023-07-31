@@ -10,7 +10,7 @@ templates = Jinja2Templates(directory="templates")
 
 auth_router = APIRouter(
     prefix='/auth',
-    tags=['Pages']
+    tags=['Auth']
 )
 
 
