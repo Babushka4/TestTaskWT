@@ -2,7 +2,11 @@
 
 Test Task for Webtronics FastAPI candidate
 
-	We are inviting you to assess your knowledge and solve the task below. Please pay attention to requirements for technology, code, your solution submission and don’t forget to visit the “bonus” section! You will need to upload your solution to Github. Good luck and feel free to be as creative as you think you should be!
+	We are inviting you to assess your knowledge and solve the task below. Please pay attention to 
+ requirements for technology, code, your solution submission and don’t forget to visit the “bonus” section! 
+ You will need to upload your solution to Github. Good luck and feel free to be as creative as you think 
+ you should be!
+ 
 TASK 
 Description
 	Create a simple RESTful API using FastAPI for a social networking application
@@ -16,7 +20,8 @@ The API needs a UI Documentation (Swagger/ReDoc)
 Bonus section (not required):
 Use https://clearbit.com/platform/enrichment for getting additional data for the user on signup
 Use emailhunter.co for verifying email existence on registration
-Use an in-memory DB for storing post likes and dislikes (As a cache, that gets updated whenever new likes and dislikes get added) 
+Use an in-memory DB for storing post likes and dislikes (As a cache, that gets updated whenever 
+new likes and dislikes get added) 
 
 Technology Requirements
 Tasks should be completed:
